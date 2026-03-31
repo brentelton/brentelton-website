@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-stone-100 text-stone-800">
       <header className="sticky top-0 z-50 bg-stone-100/90 backdrop-blur border-b border-stone-200">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
           <div>
             <div className="text-2xl md:text-3xl font-serif">Brent Elton</div>
             <div className="text-sm text-stone-600">
@@ -58,7 +58,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="#about"
+                  href="#body-based"
                   className="rounded-full border border-stone-300 px-6 py-3 font-medium hover:bg-white transition"
                 >
                   Learn More
@@ -66,17 +66,18 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-3xl shadow-sm border border-stone-200 bg-white">
-              <img
-                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
-                alt="Calm ocean and sunrise"
-                className="w-full h-[500px] object-cover"
-              />
+            <div className="rounded-3xl shadow-sm border border-stone-200 bg-gradient-to-br from-stone-200 via-stone-100 to-orange-100 min-h-[420px] flex items-center justify-center p-10">
+              <div className="text-center">
+                <div className="text-6xl mb-4">BE</div>
+                <p className="text-lg text-stone-700 leading-relaxed max-w-sm">
+                  A body-based approach to healing trauma, anxiety, and stress.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        <section id="about" className={section}>
+        <section id="body-based" className={section}>
           <div className={card}>
             <h2 className="text-4xl md:text-5xl font-serif mb-8">
               A body-based approach to mental health
@@ -85,8 +86,8 @@ export default function Home() {
             <div className="space-y-6 text-lg leading-relaxed text-stone-700">
               <p>
                 I’m a Somatic Experiencing Practitioner (SEP), and I help people
-                heal from trauma, anxiety, PTSD and chronic overwhelm by working
-                with the nervous system.
+                heal from trauma, anxiety, PTSD, and chronic overwhelm by
+                working with the nervous system.
               </p>
 
               <p>
@@ -97,7 +98,7 @@ export default function Home() {
 
               <p>
                 As your nervous system becomes more regulated, life begins to
-                feel different:
+                feel different.
               </p>
 
               <div className="grid md:grid-cols-2 gap-4 pt-2">
@@ -105,13 +106,19 @@ export default function Home() {
                   Less anxiety and overwhelm
                 </div>
                 <div className="bg-stone-50 rounded-2xl p-5">
-                  More energy and enjoyment of life
+                  More energy
                 </div>
                 <div className="bg-stone-50 rounded-2xl p-5">
                   Feeling calmer and more present
                 </div>
                 <div className="bg-stone-50 rounded-2xl p-5">
+                  Less time stuck in your head
+                </div>
+                <div className="bg-stone-50 rounded-2xl p-5">
                   More confidence and connection
+                </div>
+                <div className="bg-stone-50 rounded-2xl p-5">
+                  More enjoyment of life
                 </div>
               </div>
             </div>
@@ -139,7 +146,7 @@ export default function Home() {
               </div>
 
               <div className="bg-stone-50 rounded-2xl p-5">
-                You’ve experienced trauma, burnout, difficult relationships, or
+                You’ve experienced trauma, difficult relationships, burnout, or
                 long-term stress.
               </div>
 
@@ -150,28 +157,25 @@ export default function Home() {
             </div>
 
             <p className="mt-8 text-lg text-stone-700">
-              Instead of more willpower or more analysing, maybe your nervous
+              Instead of more willpower or meaning making, maybe your nervous
               system simply needs the right kind of support.
             </p>
           </div>
         </section>
 
         <section className={section}>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="overflow-hidden rounded-3xl shadow-sm border border-stone-200 bg-white">
-              <img
-                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=80"
-                alt="Brent Elton"
-                className="w-full h-[500px] object-cover"
-              />
-            </div>
-
-            <div>
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div className="rounded-3xl shadow-sm border border-stone-200 bg-white p-8 md:p-12">
               <h2 className="text-4xl md:text-5xl font-serif mb-6">
                 About Brent
               </h2>
 
               <div className="space-y-5 text-lg leading-relaxed text-stone-700">
+                <p>
+                  I’m a movement and meditation teacher and Somatic Experiencing
+                  Practitioner.
+                </p>
+
                 <p>
                   I was suffering anxiety and immobilising PTSD after some
                   traumatic experiences, and part of me wanted to heal so I
@@ -180,9 +184,9 @@ export default function Home() {
 
                 <p>
                   This work helped my mental health improve so much, so fast,
-                  that I quickly realised helping people experience this was a
-                  far more rewarding career choice than boxing could ever be for
-                  me.
+                  that I quickly realised helping other people experience this
+                  was a far more rewarding career choice than boxing could ever
+                  be for me.
                 </p>
 
                 <p>
@@ -198,6 +202,18 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
+            <div className="rounded-3xl shadow-sm border border-stone-200 bg-gradient-to-br from-orange-100 via-stone-100 to-stone-200 min-h-[420px] flex items-center justify-center p-10">
+              <div className="text-center max-w-sm">
+                <p className="text-2xl font-serif mb-4">
+                  Mental health is biological as much as it is psychological.
+                </p>
+                <p className="text-stone-700 text-lg leading-relaxed">
+                  When we befriend the nervous system, life becomes a whole lot
+                  more comfortable.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -208,6 +224,10 @@ export default function Home() {
             </h2>
 
             <p className="text-xl text-stone-700 mb-6">
+              The main way to work with me is through 1:1 sessions.
+            </p>
+
+            <p className="text-lg text-stone-700 mb-8">
               Whether you’re interested in healing trauma, releasing stress, or
               experiencing more joy in your life… I’d be happy to support you.
             </p>
@@ -263,7 +283,6 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-2">
                   Sun, Sound and Stillness
                 </h3>
-
                 <p className="text-stone-700">
                   Join me for free community events that combine movement,
                   mindfulness, and nervous system education.
@@ -274,7 +293,6 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-2">
                   Joy That Lasts
                 </h3>
-
                 <p className="text-stone-700">
                   A small group offering sharing the 3 main principles of my
                   work.
@@ -285,7 +303,6 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-2">
                   Corporate Workshops
                 </h3>
-
                 <p className="text-stone-700">
                   Workshops and presentations for organisations, schools, health
                   professionals and workplaces.
@@ -313,9 +330,7 @@ export default function Home() {
               I’d Like Some Support
             </a>
 
-            <p className="mt-6 text-stone-600">
-              brentelton.sep@gmail.com
-            </p>
+            <p className="mt-6 text-stone-600">brentelton.sep@gmail.com</p>
           </div>
         </section>
       </main>
