@@ -1,6 +1,7 @@
 export default function Home() {
   const section = "max-w-6xl mx-auto px-6 py-20";
-  const card = "bg-white rounded-3xl shadow-sm border border-stone-200 p-8 md:p-12";
+  const card =
+    "bg-white rounded-3xl shadow-sm border border-stone-200 p-8 md:p-12";
 
   return (
     <div className="min-h-screen bg-stone-100 text-stone-800">
@@ -66,13 +67,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-3xl shadow-sm border border-stone-200 bg-gradient-to-br from-stone-200 via-stone-100 to-orange-100 min-h-[420px] flex items-center justify-center p-10">
-              <div className="text-center">
-                <div className="text-6xl mb-4">BE</div>
-                <p className="text-lg text-stone-700 leading-relaxed max-w-sm">
-                  A body-based approach to healing trauma, anxiety, and stress.
-                </p>
-              </div>
+            <div className="overflow-hidden rounded-3xl shadow-sm border border-stone-200 bg-white">
+              <img
+                src="/hero.jpg"
+                alt="Brent Elton at sunrise"
+                className="w-full h-[520px] object-cover"
+              />
             </div>
           </div>
         </section>
@@ -105,9 +105,7 @@ export default function Home() {
                 <div className="bg-stone-50 rounded-2xl p-5">
                   Less anxiety and overwhelm
                 </div>
-                <div className="bg-stone-50 rounded-2xl p-5">
-                  More energy
-                </div>
+                <div className="bg-stone-50 rounded-2xl p-5">More energy</div>
                 <div className="bg-stone-50 rounded-2xl p-5">
                   Feeling calmer and more present
                 </div>
@@ -155,17 +153,20 @@ export default function Home() {
                 start.
               </div>
             </div>
-
-            <p className="mt-8 text-lg text-stone-700">
-              Instead of more willpower or meaning making, maybe your nervous
-              system simply needs the right kind of support.
-            </p>
           </div>
         </section>
 
         <section className={section}>
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div className="rounded-3xl shadow-sm border border-stone-200 bg-white p-8 md:p-12">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="overflow-hidden rounded-3xl shadow-sm border border-stone-200 bg-white order-2 md:order-1">
+              <img
+                src="/teaching.jpg"
+                alt="Brent teaching a group at sunrise"
+                className="w-full h-[500px] object-cover"
+              />
+            </div>
+
+            <div className="order-1 md:order-2">
               <h2 className="text-4xl md:text-5xl font-serif mb-6">
                 About Brent
               </h2>
@@ -202,18 +203,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
-            <div className="rounded-3xl shadow-sm border border-stone-200 bg-gradient-to-br from-orange-100 via-stone-100 to-stone-200 min-h-[420px] flex items-center justify-center p-10">
-              <div className="text-center max-w-sm">
-                <p className="text-2xl font-serif mb-4">
-                  Mental health is biological as much as it is psychological.
-                </p>
-                <p className="text-stone-700 text-lg leading-relaxed">
-                  When we befriend the nervous system, life becomes a whole lot
-                  more comfortable.
-                </p>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -222,10 +211,6 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-serif mb-6">
               1:1 Sessions
             </h2>
-
-            <p className="text-xl text-stone-700 mb-6">
-              The main way to work with me is through 1:1 sessions.
-            </p>
 
             <p className="text-lg text-stone-700 mb-8">
               Whether you’re interested in healing trauma, releasing stress, or
@@ -255,11 +240,6 @@ export default function Home() {
                   place. It’s more about learning how to be in your body now
                   than it is talking about what happened “back then”.
                 </p>
-
-                <p>
-                  If you have any questions about what that looks like, I’d be
-                  happy to answer them before our first session.
-                </p>
               </div>
 
               <a
@@ -274,66 +254,55 @@ export default function Home() {
 
         <section className={section}>
           <div className={card}>
-            <h2 className="text-4xl md:text-5xl font-serif mb-8">
-              Events and Workshops
-            </h2>
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-serif mb-6">
+                  Events and Workshops
+                </h2>
 
-            <div className="grid md:grid-cols-3 gap-5">
-              <div className="bg-stone-50 rounded-2xl p-5">
-                <h3 className="text-xl font-semibold mb-2">
-                  Sun, Sound and Stillness
-                </h3>
-                <p className="text-stone-700">
-                  Join me for free community events that combine movement,
-                  mindfulness, and nervous system education.
-                </p>
+                <div className="space-y-5 text-stone-700 text-lg">
+                  <div>
+                    <h3 className="font-semibold text-xl mb-1">
+                      Sun, Sound and Stillness
+                    </h3>
+                    <p>
+                      Join me for free community events that combine movement,
+                      mindfulness, and nervous system education.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold text-xl mb-1">Joy That Lasts</h3>
+                    <p>
+                      A small group offering sharing the 3 main principles of my
+                      work.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold text-xl mb-1">
+                      Corporate Workshops
+                    </h3>
+                    <p>
+                      Workshops and presentations for organisations, schools,
+                      health professionals and workplaces.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-stone-50 rounded-2xl p-5">
-                <h3 className="text-xl font-semibold mb-2">
-                  Joy That Lasts
-                </h3>
-                <p className="text-stone-700">
-                  A small group offering sharing the 3 main principles of my
-                  work.
-                </p>
-              </div>
-
-              <div className="bg-stone-50 rounded-2xl p-5">
-                <h3 className="text-xl font-semibold mb-2">
-                  Corporate Workshops
-                </h3>
-                <p className="text-stone-700">
-                  Workshops and presentations for organisations, schools, health
-                  professionals and workplaces.
-                </p>
+              <div className="overflow-hidden rounded-3xl shadow-sm border border-stone-200 bg-white">
+                <img
+                  src="/sunrise-event.jpg"
+                  alt="Sunrise community event"
+                  className="w-full h-[420px] object-cover"
+                />
               </div>
             </div>
-          </div>
-        </section>
-
-        <section className={section}>
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">
-              Reach out if you’d like support.
-            </h2>
-
-            <p className="text-xl text-stone-700 leading-relaxed mb-8">
-              Whether you’re ready to begin, have a question, or simply want to
-              see if this work is right for you — I’d love to hear from you.
-            </p>
-
-            <a
-              href="mailto:brentelton.sep@gmail.com?subject=I'd%20Like%20Some%20Support"
-              className="inline-block rounded-full bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 font-medium transition"
-            >
-              I’d Like Some Support
-            </a>
-
-            <p className="mt-6 text-stone-600">brentelton.sep@gmail.com</p>
           </div>
         </section>
       </main>
     </div>
   );
 }
+```
