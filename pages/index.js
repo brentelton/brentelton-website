@@ -51,7 +51,7 @@ export default function Home() {
 
             <div className="heroImageCard">
               <img
-                src="/Sunrise event .JPG"
+                src="/hero.JPG"
                 alt="Brent Elton at sunrise"
                 className="heroImage"
               />
