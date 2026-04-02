@@ -1,307 +1,358 @@
 export default function Home() {
-  const section = "max-w-6xl mx-auto px-6 py-20";
-  const card =
-    "bg-white rounded-3xl shadow-sm border border-stone-200 p-8 md:p-12";
-
   return (
-    <div className="min-h-screen bg-stone-100 text-stone-800">
-      <header className="sticky top-0 z-50 bg-stone-100/90 backdrop-blur border-b border-stone-200">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
-          <div>
-            <div className="text-2xl md:text-3xl font-serif">Brent Elton</div>
-            <div className="text-sm text-stone-600">
-              Somatic Experiencing Practitioner
-            </div>
-          </div>
-
-          <a
-            href="mailto:brentelton.sep@gmail.com?subject=I'd%20Like%20Some%20Support"
-            className="rounded-full bg-orange-600 hover:bg-orange-700 text-white px-5 py-3 font-medium transition"
-          >
-            I’d Like Some Support
-          </a>
-        </div>
-      </header>
-
-      <main>
-        <section className={section}>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+    <>
+      <div className="page">
+        <header className="topbar">
+          <div className="wrap topbarInner">
             <div>
-              <p className="uppercase tracking-[0.25em] text-sm text-stone-500 mb-4">
+              <div className="brand">Brent Elton</div>
+              <div className="subbrand">Somatic Experiencing Practitioner</div>
+            </div>
+            <a
+              className="button buttonPrimary"
+              href="mailto:brentelton.sep@gmail.com?subject=I'd%20Like%20Some%20Support"
+            >
+              I’d Like Some Support
+            </a>
+          </div>
+        </header>
+
+        <main>
+          <section className="hero wrap">
+            <div className="heroText">
+              <div className="eyebrow">
                 Trauma • Anxiety • PTSD • Somatic Experiencing
-              </p>
-
-              <h1 className="text-5xl md:text-7xl font-serif leading-tight mb-6">
-                Heal your trauma so you can enjoy your life.
-              </h1>
-
-              <p className="text-xl leading-relaxed text-stone-700 mb-6">
+              </div>
+              <h1>Heal your trauma so you can enjoy your life.</h1>
+              <p className="lead">
                 I help people feel safer in their body, repair their relationship
-                with their nervous system, and move beyond anxiety, trauma,
-                PTSD, and the sense that they have to work so hard just to
-                survive.
+                with their nervous system, and move beyond anxiety, trauma, PTSD,
+                and the sense that they have to work so hard just to survive.
               </p>
-
-              <p className="text-lg leading-relaxed text-stone-700 mb-8">
+              <p>
                 Mental health isn’t just in your head. When the nervous system
-                gets stuck in survival mode, it burns a lot of energy. My work
-                is about helping you come back to a sense of safety within
-                yourself — so you can feel more relaxed, more resilient, and
-                more able to enjoy your life.
+                gets stuck in survival mode, it burns a lot of energy. My work is
+                about helping you come back to a sense of safety within yourself —
+                so you can feel more relaxed, more resilient, and more able to
+                enjoy your life.
               </p>
-
-              <div className="flex flex-wrap gap-4">
+              <div className="buttonRow">
                 <a
+                  className="button buttonPrimary"
                   href="mailto:brentelton.sep@gmail.com?subject=I'd%20Like%20Some%20Support"
-                  className="rounded-full bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 font-medium transition"
                 >
                   I’d Like Some Support
                 </a>
-
-                <a
-                  href="#body-based"
-                  className="rounded-full border border-stone-300 px-6 py-3 font-medium hover:bg-white transition"
-                >
+                <a className="button buttonSecondary" href="#learn-more">
                   Learn More
                 </a>
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-3xl shadow-sm border border-stone-200 bg-white">
+            <div className="heroImageCard">
               <img
-                src="/hero.jpg"
+                src="/sunrise-event.jpg"
                 alt="Brent Elton at sunrise"
-                className="w-full h-[520px] object-cover"
+                className="heroImage"
               />
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section id="body-based" className={section}>
-          <div className={card}>
-            <h2 className="text-4xl md:text-5xl font-serif mb-8">
-              A body-based approach to mental health
-            </h2>
-
-            <div className="space-y-6 text-lg leading-relaxed text-stone-700">
+          <section id="learn-more" className="section wrap">
+            <div className="card">
+              <p className="sectionLabel">
+                A body-based approach to healing trauma, anxiety, and stress.
+              </p>
+              <h2>A body-based approach to mental health</h2>
               <p>
                 I’m a Somatic Experiencing Practitioner (SEP), and I help people
-                heal from trauma, anxiety, PTSD, and chronic overwhelm by
-                working with the nervous system.
+                heal from trauma, anxiety, PTSD, and chronic overwhelm by working
+                with the nervous system.
               </p>
-
               <p>
-                Rather than only talking about what happened, we gently help
-                your body process any lingering stress, tension, or survival
-                responses that may still be stuck.
+                Rather than only talking about what happened, we gently help your
+                body process any lingering stress, tension, or survival responses
+                that may still be stuck.
               </p>
-
               <p>
-                As your nervous system becomes more regulated, life begins to
-                feel different.
+                As your nervous system becomes more regulated, life begins to feel
+                different.
               </p>
 
-              <div className="grid md:grid-cols-2 gap-4 pt-2">
-                <div className="bg-stone-50 rounded-2xl p-5">
-                  Less anxiety and overwhelm
-                </div>
-                <div className="bg-stone-50 rounded-2xl p-5">More energy</div>
-                <div className="bg-stone-50 rounded-2xl p-5">
-                  Feeling calmer and more present
-                </div>
-                <div className="bg-stone-50 rounded-2xl p-5">
-                  Less time stuck in your head
-                </div>
-                <div className="bg-stone-50 rounded-2xl p-5">
-                  More confidence and connection
-                </div>
-                <div className="bg-stone-50 rounded-2xl p-5">
-                  More enjoyment of life
-                </div>
-              </div>
+              <ul className="benefits">
+                <li>Less anxiety and overwhelm</li>
+                <li>More energy</li>
+                <li>Feeling calmer and more present</li>
+                <li>Less time stuck in your head</li>
+                <li>More confidence and connection</li>
+                <li>More enjoyment of life</li>
+              </ul>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section className={section}>
-          <div className={card}>
-            <h2 className="text-4xl md:text-5xl font-serif mb-8">
-              You may be here because...
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-4 text-lg text-stone-700">
-              <div className="bg-stone-50 rounded-2xl p-5">
-                You’ve tried talk therapy, but still don’t feel different in
-                your body.
-              </div>
-
-              <div className="bg-stone-50 rounded-2xl p-5">
-                You feel anxious, overwhelmed, shut down, or constantly on edge.
-              </div>
-
-              <div className="bg-stone-50 rounded-2xl p-5">
-                You overthink, people-please, or work hard just to feel okay.
-              </div>
-
-              <div className="bg-stone-50 rounded-2xl p-5">
-                You’ve experienced trauma, difficult relationships, burnout, or
-                long-term stress.
-              </div>
-
-              <div className="bg-stone-50 rounded-2xl p-5 md:col-span-2">
-                You know something needs to change, but don’t know where to
-                start.
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className={section}>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="overflow-hidden rounded-3xl shadow-sm border border-stone-200 bg-white order-2 md:order-1">
-              <img
-                src="/teaching.jpg"
-                alt="Brent teaching a group at sunrise"
-                className="w-full h-[500px] object-cover"
-              />
+          <section className="section wrap twoCol">
+            <div className="card">
+              <h2>You may be here because...</h2>
+              <ul className="benefits">
+                <li>You’ve tried talk therapy, but still don’t feel different in your body.</li>
+                <li>You feel anxious, overwhelmed, shut down, or constantly on edge.</li>
+                <li>You overthink, people-please, or work hard just to feel okay.</li>
+                <li>You’ve experienced trauma, difficult relationships, burnout, or long-term stress.</li>
+                <li>You know something needs to change, but don’t know where to start.</li>
+              </ul>
+              <p>
+                Instead of more willpower or meaning making, maybe your nervous
+                system simply needs the right kind of support.
+              </p>
             </div>
 
-            <div className="order-1 md:order-2">
-              <h2 className="text-4xl md:text-5xl font-serif mb-6">
-                About Brent
-              </h2>
-
-              <div className="space-y-5 text-lg leading-relaxed text-stone-700">
-                <p>
-                  I’m a movement and meditation teacher and Somatic Experiencing
-                  Practitioner.
-                </p>
-
-                <p>
-                  I was suffering anxiety and immobilising PTSD after some
-                  traumatic experiences, and part of me wanted to heal so I
-                  could get back to my boxing career.
-                </p>
-
-                <p>
-                  This work helped my mental health improve so much, so fast,
-                  that I quickly realised helping other people experience this
-                  was a far more rewarding career choice than boxing could ever
-                  be for me.
-                </p>
-
-                <p>
-                  I discovered that mental health is biological as much as it is
-                  psychological.
-                </p>
-
-                <p>
-                  My work now brings together Somatic Experiencing, movement,
-                  mindfulness, and nervous system education to help people feel
-                  safer, calmer, more resilient, and more able to enjoy their
-                  lives.
-                </p>
-              </div>
+            <div className="card">
+              <h2>About Brent</h2>
+              <p>
+                Brent Elton is a Somatic Experiencing Practitioner who helps
+                people heal from trauma, anxiety, and PTSD through a body-based
+                approach to mental health.
+              </p>
+              <p>
+                He combines somatic therapy, movement, and meditation to help
+                people feel safer, more connected, and more able to enjoy their
+                lives.
+              </p>
+              <p>
+                Brent also runs workshops, events, and presentations for
+                organisations, schools, health professionals, and workplaces.
+              </p>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section className={section}>
-          <div className={card}>
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">
-              1:1 Sessions
-            </h2>
-
-            <p className="text-lg text-stone-700 mb-8">
-              Whether you’re interested in healing trauma, releasing stress, or
-              experiencing more joy in your life… I’d be happy to support you.
-            </p>
-
-            <div className="bg-stone-50 rounded-3xl p-8 border border-stone-200">
-              <div className="inline-block rounded-full bg-orange-600 text-white px-5 py-2 font-medium mb-6">
-                Let’s Talk
-              </div>
-
-              <div className="space-y-5 text-lg leading-relaxed text-stone-700">
-                <p>
-                  If you’d like to see if this work is a good fit for you, let’s
-                  have a chat.
-                </p>
-
-                <p>
-                  Although what I offer isn’t talk therapy, it is helpful for me
-                  to know a little about what you’re hoping to get from this
-                  work.
-                </p>
-
-                <p>
-                  Together, we will be creating the conditions to help your
-                  nervous system come back into a more relaxed and resilient
-                  place. It’s more about learning how to be in your body now
-                  than it is talking about what happened “back then”.
-                </p>
-              </div>
-
+          <section className="section wrap">
+            <div className="cta">
+              <h2>Ready for support?</h2>
+              <p>
+                If this approach resonates with you, send me an email and we can
+                explore what kind of support might be the best fit.
+              </p>
               <a
+                className="button buttonPrimary"
                 href="mailto:brentelton.sep@gmail.com?subject=I'd%20Like%20Some%20Support"
-                className="inline-block mt-8 rounded-full bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 font-medium transition"
               >
-                I’d Like Some Support
+                Contact Brent
               </a>
             </div>
-          </div>
-        </section>
+          </section>
+        </main>
+      </div>
 
-        <section className={section}>
-          <div className={card}>
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-              <div>
-                <h2 className="text-4xl md:text-5xl font-serif mb-6">
-                  Events and Workshops
-                </h2>
+      <style jsx>{`
+        .page {
+          min-height: 100vh;
+          background: #f5f1ea;
+          color: #2f2a24;
+          font-family: Georgia, "Times New Roman", serif;
+        }
 
-                <div className="space-y-5 text-stone-700 text-lg">
-                  <div>
-                    <h3 className="font-semibold text-xl mb-1">
-                      Sun, Sound and Stillness
-                    </h3>
-                    <p>
-                      Join me for free community events that combine movement,
-                      mindfulness, and nervous system education.
-                    </p>
-                  </div>
+        .wrap {
+          max-width: 1120px;
+          margin: 0 auto;
+          padding: 0 24px;
+        }
 
-                  <div>
-                    <h3 className="font-semibold text-xl mb-1">Joy That Lasts</h3>
-                    <p>
-                      A small group offering sharing the 3 main principles of my
-                      work.
-                    </p>
-                  </div>
+        .topbar {
+          position: sticky;
+          top: 0;
+          z-index: 20;
+          background: rgba(245, 241, 234, 0.92);
+          backdrop-filter: blur(10px);
+          border-bottom: 1px solid #ddd3c5;
+        }
 
-                  <div>
-                    <h3 className="font-semibold text-xl mb-1">
-                      Corporate Workshops
-                    </h3>
-                    <p>
-                      Workshops and presentations for organisations, schools,
-                      health professionals and workplaces.
-                    </p>
-                  </div>
-                </div>
-              </div>
+        .topbarInner {
+          min-height: 84px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
 
-              <div className="overflow-hidden rounded-3xl shadow-sm border border-stone-200 bg-white">
-                <img
-                  src="/sunrise-event.jpg"
-                  alt="Sunrise community event"
-                  className="w-full h-[420px] object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
+        .brand {
+          font-size: 32px;
+          line-height: 1.1;
+          font-weight: 700;
+        }
+
+        .subbrand {
+          font-size: 15px;
+          color: #6d6257;
+          margin-top: 6px;
+        }
+
+        .hero {
+          display: grid;
+          grid-template-columns: 1.2fr 1fr;
+          gap: 40px;
+          align-items: center;
+          padding-top: 56px;
+          padding-bottom: 32px;
+        }
+
+        .eyebrow {
+          font-size: 15px;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: #7a6d60;
+          margin-bottom: 18px;
+        }
+
+        h1 {
+          font-size: 62px;
+          line-height: 1.02;
+          margin: 0 0 20px;
+          font-weight: 700;
+        }
+
+        h2 {
+          font-size: 40px;
+          line-height: 1.1;
+          margin: 0 0 18px;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 21px;
+          line-height: 1.65;
+          margin: 0 0 18px;
+        }
+
+        .lead {
+          font-size: 24px;
+        }
+
+        .buttonRow {
+          display: flex;
+          gap: 14px;
+          flex-wrap: wrap;
+          margin-top: 28px;
+        }
+
+        .button {
+          display: inline-block;
+          padding: 14px 20px;
+          border-radius: 999px;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 700;
+          transition: transform 0.15s ease, opacity 0.15s ease;
+        }
+
+        .button:hover {
+          transform: translateY(-1px);
+          opacity: 0.95;
+        }
+
+        .buttonPrimary {
+          background: #2f2a24;
+          color: #fff;
+        }
+
+        .buttonSecondary {
+          border: 1px solid #b8aa98;
+          color: #2f2a24;
+          background: transparent;
+        }
+
+        .heroImageCard,
+        .card,
+        .cta {
+          background: #fffdfa;
+          border: 1px solid #ddd3c5;
+          border-radius: 28px;
+          box-shadow: 0 10px 30px rgba(47, 42, 36, 0.06);
+        }
+
+        .heroImageCard {
+          overflow: hidden;
+          min-height: 520px;
+        }
+
+        .heroImage {
+          width: 100%;
+          height: 100%;
+          min-height: 520px;
+          object-fit: cover;
+          display: block;
+        }
+
+        .section {
+          padding: 20px 0 34px;
+        }
+
+        .card {
+          padding: 36px;
+        }
+
+        .sectionLabel {
+          font-size: 15px;
+          text-transform: uppercase;
+          letter-spacing: 0.03em;
+          color: #7a6d60;
+          margin-bottom: 10px;
+        }
+
+        .benefits {
+          margin: 22px 0;
+          padding-left: 22px;
+        }
+
+        .benefits li {
+          font-size: 21px;
+          line-height: 1.65;
+          margin-bottom: 8px;
+        }
+
+        .twoCol {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 24px;
+        }
+
+        .cta {
+          padding: 40px;
+          text-align: center;
+        }
+
+        @media (max-width: 900px) {
+          .hero,
+          .twoCol {
+            grid-template-columns: 1fr;
+          }
+
+          h1 {
+            font-size: 46px;
+          }
+
+          h2 {
+            font-size: 34px;
+          }
+
+          p,
+          .benefits li,
+          .lead {
+            font-size: 19px;
+          }
+
+          .topbarInner {
+            align-items: flex-start;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            flex-direction: column;
+          }
+
+          .heroImageCard,
+          .heroImage {
+            min-height: 320px;
+          }
+        }
+      `}</style>
+    </>
   );
 }
