@@ -107,20 +107,24 @@ export default function Home() {
 
             <div className="card">
               <h2>About Brent</h2>
-              <p>
-                Brent Elton is a Somatic Experiencing Practitioner who helps
-                people heal from trauma, anxiety, and PTSD through a body-based
-                approach to mental health.
-              </p>
-              <p>
-                He combines somatic therapy, movement, and meditation to help
-                people feel safer, more connected, and more able to enjoy their
-                lives.
-              </p>
-              <p>
-                Brent also runs workshops, events, and presentations for
-                organisations, schools, health professionals, and workplaces.
-              </p>
+            
+                <p>
+  Brent was once a professional boxer, but after a series of traumatic
+  experiences in his personal life, his performance rapidly declined, as
+  did his mental health.
+</p>
+
+<p>
+  The journey to get well again took him across the world. He studied yoga,
+  meditation and martial arts in India, Nepal and China, before finding
+  the body of work that made everything click.
+</p>
+
+<p>
+  The work is called Somatic Experiencing. It is an approach to healing
+  trauma and stress-based disorders by helping the nervous system move out
+  of survival responses and return to a natural, vibrant sense of aliveness.
+</p>              
             </div>
           </section>
 
