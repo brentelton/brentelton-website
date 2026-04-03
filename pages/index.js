@@ -78,15 +78,14 @@ export default function Home() {
                 As your nervous system becomes more regulated, life begins to feel
                 different.
               </p>
-
-              <ul className="benefits">
+<p>You can look forward to...</p>              
+                  <ul className="benefits">
                 <li>Less anxiety and overwhelm</li>
-                <li>More energy</li>
-                <li>Feeling calmer and more present</li>
-                <li>Less time stuck in your head</li>
-                <li>More confidence and connection</li>
-                <li>More enjoyment of life</li>
-              </ul>
+<li>More energy</li>
+<li>Less time stuck in your head</li>
+<li>More confidence, calm and connection</li>
+<li>and most importantly... A lot more enjoyment of life</li>              
+                  </ul>
             </div>
           </section>
 
